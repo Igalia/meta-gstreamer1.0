@@ -22,7 +22,7 @@ S = "${WORKDIR}/${PNREAL}-${PV}"
 REQUIRED_DISTRO_FEATURES = "gobject-introspection-data"
 UNKNOWN_CONFIGURE_WHITELIST_append = " introspection"
 
-inherit meson pkgconfig distutils3-base upstream-version-is-even gobject-introspection features_check
+inherit meson pkgconfig distutils3-base upstream-version-is-even gobject-introspection distro_features_check
 
 do_install_append() {
 
