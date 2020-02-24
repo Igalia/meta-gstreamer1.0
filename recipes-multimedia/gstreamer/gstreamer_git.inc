@@ -1,0 +1,4 @@
+SRCREV = "${AUTOREV}"
+PV = "1.17+gitr${SRCPV}"
+S = "${WORKDIR}/git"
+DEFAULT_PREFERENCE = "-1"
