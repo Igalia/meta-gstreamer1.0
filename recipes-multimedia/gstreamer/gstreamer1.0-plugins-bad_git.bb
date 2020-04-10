@@ -16,3 +16,5 @@ FILES_${PN}-encodingprofiles += "${datadir}/gstreamer-1.0/encoding-profiles/onli
 do_install_append() {
     rm -fr ${D}/${datadir}/gstreamer-1.0/encoding-profiles/;
 }
+
+PACKAGECONFIG[v4l2codecs] = "-Dv4l2codecs=enabled,-Dv4l2codecs=disabled,"
